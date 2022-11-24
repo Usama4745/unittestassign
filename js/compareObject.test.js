@@ -8,3 +8,6 @@ test('compare Mismatching object', () => {
 test('compare string object', () => {
     expect(compareobj({"name": "sheet2","freeze": "A1","styles": [],"merges": [],"rows": {},"validations": []},"this is string")).toBe(false);
 });
+test('compare number object', () => {
+    expect(compareobj({"name": "sheet2","freeze": "A1","styles": [],"merges": [],"rows": {},"validations": []},100)).toBe(false);
+});
